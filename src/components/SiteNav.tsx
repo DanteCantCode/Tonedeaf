@@ -10,7 +10,7 @@ const links = [
 
 export function SiteNav() {
   return (
-    <header className="animate-nav-drop fixed inset-x-0 top-0 z-50 border-b border-black/15 bg-brand/90 backdrop-blur-sm">
+    <header className="animate-nav-drop fixed inset-x-0 top-0 z-50 border-b border-black/15 bg-brand sm:bg-brand/90 sm:backdrop-blur-sm">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
         <a href="#top" className="text-sm font-semibold tracking-wide uppercase">
           {club.name}

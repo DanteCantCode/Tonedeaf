@@ -13,6 +13,7 @@ export function PersonCard({ person }: { person: Person }) {
             alt={person.name}
             width={768}
             height={1024}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 320px, 384px"
             className="aspect-[3/4] w-full rounded-[22px] object-cover"
           />
         ) : (

@@ -14,6 +14,7 @@ function Poster({ event }: { event: EventItem }) {
       alt={`${event.title} poster`}
       width={600}
       height={800}
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
       className="aspect-[3/4] w-full rounded-[22px] object-cover transition-opacity hover:opacity-90"
     />
   );
