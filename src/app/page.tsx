@@ -1,4 +1,3 @@
-import { SiteNav } from "../components/SiteNav";
 import { PersonCard } from "../components/PersonCard";
 import { EventSections } from "../components/EventSections";
 import { ContactForm } from "../components/ContactForm";
@@ -8,13 +7,11 @@ import { club, committee } from "../data/content";
 export default function Home() {
   return (
     <>
-      <SiteNav />
-
       <main>
         {/* Hero */}
         <section
           id="top"
-          className="section relative flex flex-col items-center justify-center px-5 py-28 sm:px-8"
+          className="section relative flex flex-col items-center justify-center px-5 py-16 sm:px-8"
         >
           <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
             <h1 className="animate-fade-up max-w-5xl text-[clamp(3.5rem,14vw,9rem)] font-bold leading-[0.9] tracking-tight uppercase">

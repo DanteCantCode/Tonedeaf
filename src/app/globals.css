@@ -38,17 +38,6 @@ body {
   min-height: 100svh;
 }
 
-@keyframes nav-drop {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -67,10 +56,6 @@ body {
   to {
     transform: scaleX(1);
   }
-}
-
-.animate-nav-drop {
-  animation: nav-drop 1.35s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .animate-fade-up {
@@ -114,10 +99,6 @@ body {
     transition: opacity 0.55s ease-out, transform 0.55s ease-out;
   }
 
-  .animate-nav-drop {
-    animation-duration: 0.8s;
-  }
-
   .animate-fade-up,
   .animate-fade-up-delay,
   .animate-fade-up-delay-2,
@@ -131,7 +112,6 @@ body {
     scroll-behavior: auto;
   }
 
-  .animate-nav-drop,
   .animate-fade-up,
   .animate-fade-up-delay,
   .animate-fade-up-delay-2,
