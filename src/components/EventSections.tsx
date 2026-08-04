@@ -38,9 +38,8 @@ export function EventSections() {
       <section id="upcoming" className="section px-5 py-24 sm:px-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
           <FadeUp>
-            <p className="text-xs uppercase tracking-[0.35em]">Upcoming</p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-              Next up
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+              Upcoming events!
             </h2>
           </FadeUp>
           {upcoming.length > 0 ? (
@@ -66,8 +65,7 @@ export function EventSections() {
       <section id="past" className="section px-5 py-24 sm:px-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
           <FadeUp>
-            <p className="text-xs uppercase tracking-[0.35em]">The Archive</p>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Past events
             </h2>
           </FadeUp>

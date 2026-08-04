@@ -17,10 +17,7 @@ export default function Home() {
           className="section relative flex flex-col items-center justify-center px-5 py-28 sm:px-8"
         >
           <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 text-center">
-            <p className="animate-fade-up text-sm uppercase tracking-[0.35em]">
-              Edith Cowan University
-            </p>
-            <h1 className="animate-fade-up-delay max-w-5xl text-[clamp(3.5rem,14vw,9rem)] font-bold leading-[0.9] tracking-tight uppercase">
+            <h1 className="animate-fade-up max-w-5xl text-[clamp(3.5rem,14vw,9rem)] font-bold leading-[0.9] tracking-tight uppercase">
               {club.name}
             </h1>
             <div className="animate-draw-line h-px w-full max-w-md bg-black" />
@@ -51,8 +48,7 @@ export default function Home() {
         >
           <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
             <FadeUp>
-              <p className="text-xs uppercase tracking-[0.35em]">About</p>
-              <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 Only deaf to
                 <br />
                 bad requests.
@@ -71,8 +67,7 @@ export default function Home() {
         <section id="committee" className="section px-5 py-24 sm:px-8">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
             <FadeUp>
-              <p className="text-xs uppercase tracking-[0.35em]">Committee</p>
-              <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 The Tonedeaf Crew
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-black/75 sm:text-lg">
@@ -99,8 +94,7 @@ export default function Home() {
           <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-12 py-8 lg:grid-cols-2 lg:gap-16">
             <FadeUp className="flex flex-col gap-10">
               <div>
-                <p className="text-xs uppercase tracking-[0.35em]">Contact</p>
-                <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+                <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                   Stay in the loop
                 </h2>
               </div>
