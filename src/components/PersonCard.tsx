@@ -22,7 +22,7 @@ export function PersonCard({ person }: { person: Person }) {
       </FadeUp>
       <FadeUp
         delay={120}
-        className="flex min-w-0 flex-1 flex-col justify-center gap-3"
+        className="flex min-w-0 flex-1 flex-col justify-center gap-3 text-center sm:text-left"
       >
         <p className="text-sm uppercase tracking-[0.25em]">{person.role}</p>
         <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">

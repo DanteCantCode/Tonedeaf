@@ -47,7 +47,7 @@ export function EventCard({
     <FadeUp delay={delay}>
       <article className="flex flex-col gap-4">
         <Poster event={event} />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-center sm:text-left">
           <p className="text-xs uppercase tracking-[0.25em]">{event.date}</p>
           <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
             {event.title}

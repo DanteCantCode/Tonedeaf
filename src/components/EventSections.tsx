@@ -37,7 +37,7 @@ export function EventSections() {
     <>
       <section id="upcoming" className="section px-5 py-24 sm:px-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-          <FadeUp>
+          <FadeUp className="text-center sm:text-left">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Upcoming events!
             </h2>
@@ -53,7 +53,7 @@ export function EventSections() {
               ))}
             </div>
           ) : (
-            <FadeUp>
+            <FadeUp className="text-center sm:text-left">
               <p className="text-lg text-black/70">
                 No upcoming events right now — check back soon.
               </p>
@@ -64,7 +64,7 @@ export function EventSections() {
 
       <section id="past" className="section px-5 py-24 sm:px-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-          <FadeUp>
+          <FadeUp className="text-center sm:text-left">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Past events
             </h2>
@@ -80,7 +80,7 @@ export function EventSections() {
               ))}
             </div>
           ) : (
-            <FadeUp>
+            <FadeUp className="text-center sm:text-left">
               <p className="text-lg text-black/70">No past events yet.</p>
             </FadeUp>
           )}

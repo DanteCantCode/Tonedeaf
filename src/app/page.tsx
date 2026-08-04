@@ -43,7 +43,7 @@ export default function Home() {
           id="about"
           className="section flex flex-col justify-center px-5 py-24 sm:px-8"
         >
-          <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+          <div className="mx-auto grid w-full max-w-6xl gap-10 text-center sm:text-left lg:grid-cols-[1fr_1.2fr] lg:gap-16">
             <FadeUp>
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 Only deaf to
@@ -63,11 +63,11 @@ export default function Home() {
         {/* Committee */}
         <section id="committee" className="section px-5 py-24 sm:px-8">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-            <FadeUp>
+            <FadeUp className="text-center sm:text-left">
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 The Tonedeaf Crew
               </h2>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-black/75 sm:text-lg">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-black/75 sm:mx-0 sm:text-lg mx-auto">
                 The people behind the scenes of the club that makes events happen
                 for you!
               </p>
@@ -89,13 +89,13 @@ export default function Home() {
           className="section flex flex-col justify-between px-5 py-24 sm:px-8"
         >
           <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-12 py-8 lg:grid-cols-2 lg:gap-16">
-            <FadeUp className="flex flex-col gap-10">
+            <FadeUp className="flex flex-col gap-10 text-center sm:text-left">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                   Stay in the loop
                 </h2>
               </div>
-              <div className="flex flex-col gap-4 text-lg sm:text-xl">
+              <div className="flex flex-col items-center gap-4 text-lg sm:items-start sm:text-xl">
                 <a
                   href={`mailto:${club.email}`}
                   className="w-fit underline underline-offset-4"
@@ -126,7 +126,7 @@ export default function Home() {
             </FadeUp>
           </div>
           <FadeUp>
-            <footer className="mx-auto w-full max-w-6xl border-t border-black/20 pt-6 text-sm text-black/60">
+            <footer className="mx-auto w-full max-w-6xl border-t border-black/20 pt-6 text-center text-sm text-black/60 sm:text-left">
               <p>
                 © {new Date().getFullYear()} {club.name} · ECU Student Guild
                 club

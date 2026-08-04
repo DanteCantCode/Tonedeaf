@@ -3,7 +3,7 @@ export function ContactForm({ email }: { email: string }) {
     <form
       action={`https://formsubmit.co/${email}`}
       method="POST"
-      className="flex w-full flex-col gap-4"
+      className="flex w-full flex-col gap-4 text-center sm:text-left"
     >
       <input type="hidden" name="_subject" value="Tonedeaf website enquiry" />
       <input type="hidden" name="_template" value="table" />
@@ -54,7 +54,7 @@ export function ContactForm({ email }: { email: string }) {
 
       <button
         type="submit"
-        className="mt-2 w-fit cursor-pointer border border-black bg-black px-6 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+        className="mx-auto mt-2 w-fit cursor-pointer border border-black bg-black px-6 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5 sm:mx-0"
       >
         Send message
       </button>
