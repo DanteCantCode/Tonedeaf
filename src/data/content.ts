@@ -22,7 +22,9 @@ export type EventItem = {
   description: string;
   /** Drop a file in /public/events/ and set e.g. "/events/dj-sessions.jpg" */
   poster: string | null;
+  order?: number;
   ticketUrl?: string;
+  rsvpUrl?: string;
 };
 
 export const club = {
@@ -77,7 +79,9 @@ export const events: EventItem[] = [
     location: "Birra Bar, ECU Joondalup",
     description: "2026 Start of Semester 2 Party! Only $5 tickets.",
     poster: "/events/start-of-semester-party.JPG",
+    order: 1,
     ticketUrl: "https://events.humanitix.com/start-of-semester-party-x4wr93k5",
+    rsvpUrl: "https://events.humanitix.com/start-of-semester-party-x4wr93k5",
   },
   {
     id: "asylum-takeover",
@@ -87,8 +91,10 @@ export const events: EventItem[] = [
     location: "Paramount Nightclub, 163 James St, Northbridge",
     description: "Tonedeaf's first nightclub takeover event!",
     poster: "/events/asylum-takeover.PNG",
+    order: 3,
     ticketUrl:
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
+    rsvpUrl: "https://tally.so/r/WOPL6P",
   },
   {
     id: "dj-workshop-open-day",
@@ -98,6 +104,7 @@ export const events: EventItem[] = [
     location: "CreatorsLAB, Ground Floor, ECU City",
     description: "Get on the decks and learn how to DJ!",
     poster: "/events/dj-workshop-open-day.PNG",
+    order: 2,
   },
   {
     id: "orientation-celebration",
@@ -139,7 +146,12 @@ export function getUpcomingEvents(now = new Date()): EventItem[] {
   const t = now.getTime();
   return events
     .filter((event) => endsAtTime(event) > t)
-    .sort((a, b) => endsAtTime(a) - endsAtTime(b));
+    .sort((a, b) => {
+      if (a.order != null || b.order != null) {
+        return (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER);
+      }
+      return endsAtTime(a) - endsAtTime(b);
+    });
 }
 
 /** Past first, most recently finished first. */

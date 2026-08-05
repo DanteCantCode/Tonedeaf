@@ -49,6 +49,7 @@ export function EventSections() {
                   key={event.id}
                   event={event}
                   delay={index * 100}
+                  upcoming
                 />
               ))}
             </div>

@@ -40,12 +40,52 @@ function Poster({ event }: { event: EventItem }) {
   );
 }
 
+function EventActionButton({
+  href,
+  label,
+  primary = false,
+}: {
+  href?: string;
+  label: string;
+  primary?: boolean;
+}) {
+  const base =
+    "px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5";
+  const enabled = primary
+    ? `${base} cursor-pointer border border-black bg-black text-brand`
+    : `${base} cursor-pointer border border-black`;
+
+  if (!href) {
+    return (
+      <span
+        className={`${enabled} pointer-events-none opacity-40`}
+        aria-disabled="true"
+      >
+        {label}
+      </span>
+    );
+  }
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={enabled}
+    >
+      {label}
+    </a>
+  );
+}
+
 export function EventCard({
   event,
   delay = 0,
+  upcoming = false,
 }: {
   event: EventItem;
   delay?: number;
+  upcoming?: boolean;
 }) {
   return (
     <FadeUp delay={delay}>
@@ -60,6 +100,16 @@ export function EventCard({
             {event.description}
           </p>
         </div>
+        {upcoming ? (
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <EventActionButton
+              href={event.ticketUrl}
+              label="Tickets"
+              primary
+            />
+            <EventActionButton href={event.rsvpUrl} label="RSVP" />
+          </div>
+        ) : null}
       </article>
     </FadeUp>
   );
