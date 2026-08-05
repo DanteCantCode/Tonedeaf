@@ -92,7 +92,7 @@ export default function Home() {
             <FadeUp className="flex flex-col gap-10 text-center sm:text-left">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                  Stay in the loop
+                  Get in touch!
                 </h2>
               </div>
               <div className="flex flex-col items-center gap-4 text-lg sm:items-start sm:text-xl">
@@ -109,14 +109,6 @@ export default function Home() {
                   className="w-fit underline underline-offset-4"
                 >
                   Instagram: @tonedeaf_ecu
-                </a>
-                <a
-                  href={club.tickets}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-fit underline underline-offset-4"
-                >
-                  Tickets — TryBooking
                 </a>
               </div>
             </FadeUp>

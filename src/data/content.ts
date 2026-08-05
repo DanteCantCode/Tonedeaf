@@ -40,7 +40,7 @@ export const committee: Person[] = [
   {
     id: "president",
     name: "Max Van Zutphen (MAZE)",
-    role: "Club President",
+    role: "Club President & DJ",
     bio: "Bio coming soon. Swap this copy and add a photo when you're ready.",
     image: "/committee/max-van-zutphen.JPG",
   },
