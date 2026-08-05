@@ -29,7 +29,7 @@ export type EventItem = {
 
 export const club = {
   name: "Tonedeaf",
-  tagline: "ECU's DJ, electronic music & event production club",
+  tagline: "ECU's one and only DJ, electronic music & event production club",
   about:
     "Tonedeaf fosters a vibrant community for ECU students passionate about DJing, electronic music, and event production. We organise events such as music events at nightclubs, bars and pubs, open-deck nights, and DJ showcases, plus workshops during the week to learn more about the art of DJing.",
   instagram: "https://www.instagram.com/tonedeaf_ecu/",
@@ -94,7 +94,7 @@ export const events: EventItem[] = [
     order: 3,
     ticketUrl:
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
-    rsvpUrl: "https://tally.so/r/WOPL6P",
+    rsvpUrl: "https://www.facebook.com/share/19HtciFGBm/",
   },
   {
     id: "dj-workshop-open-day",
