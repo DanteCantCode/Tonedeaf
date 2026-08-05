@@ -8,14 +8,16 @@ export function PersonCard({ person }: { person: Person }) {
     <article className="flex flex-col gap-6 sm:flex-row sm:gap-12 md:gap-16 lg:gap-20">
       <FadeUp className="w-full shrink-0 sm:w-64 md:w-80 lg:w-96">
         {person.image ? (
-          <Image
-            src={person.image}
-            alt={person.name}
-            width={768}
-            height={1024}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 320px, 384px"
-            className="aspect-[3/4] w-full rounded-[22px] object-cover"
-          />
+          <div className="overflow-hidden rounded-[22px]">
+            <Image
+              src={person.image}
+              alt={person.name}
+              width={768}
+              height={1024}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 320px, 384px"
+              className="aspect-[3/4] w-full object-cover transition-transform duration-500 ease-out hover:scale-[1.04]"
+            />
+          </div>
         ) : (
           <PlaceholderMedia label="Photo" />
         )}

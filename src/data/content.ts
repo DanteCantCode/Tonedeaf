@@ -75,7 +75,7 @@ export const events: EventItem[] = [
     date: "Friday 7 August 2026 · 6:30PM – 10:30PM",
     endsAt: "2026-08-07T22:30:00+08:00",
     location: "Birra Bar, ECU Joondalup",
-    description: "ECU Student Guild presents — $5 tickets.",
+    description: "2026 Start of Semester 2 Party! Only $5 tickets.",
     poster: "/events/start-of-semester-party.JPG",
     ticketUrl: "https://events.humanitix.com/start-of-semester-party-x4wr93k5",
   },
@@ -85,7 +85,7 @@ export const events: EventItem[] = [
     date: "Friday 14 August 2026 · 9PM – 3AM",
     endsAt: "2026-08-15T03:00:00+08:00",
     location: "Paramount Nightclub, 163 James St, Northbridge",
-    description: "Garage · House · Techno.",
+    description: "Tonedeaf's first nightclub takeover event!",
     poster: "/events/asylum-takeover.PNG",
     ticketUrl:
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
@@ -96,7 +96,7 @@ export const events: EventItem[] = [
     date: "9 August 2028 · ECU Open Day",
     endsAt: "2028-08-09T23:59:59+08:00",
     location: "CreatorsLAB, Ground Floor, ECU City",
-    description: "Get on the decks and learn how to DJ.",
+    description: "Get on the decks and learn how to DJ!",
     poster: "/events/dj-workshop-open-day.PNG",
   },
   {
@@ -106,7 +106,7 @@ export const events: EventItem[] = [
     endsAt: "2026-07-23T16:00:00+08:00",
     location: "Birra Bar, ECU Joondalup",
     description:
-      "Kick off your university journey — pool, peer leaders, and drinks on us.",
+      "Kick off your university journey! Various activites and a drink on us.",
     poster: "/events/orientation-celebration.PNG",
   },
   {
@@ -120,12 +120,12 @@ export const events: EventItem[] = [
   },
   {
     id: "student-night",
-    title: "Tonedeaf Wednesdays — Student Night",
+    title: "Tonedeaf Wednesdays",
     date: "Wednesday 6 May 2026 · 6:00PM",
     endsAt: "2026-05-06T23:59:59+08:00",
     location: "Chambers Room, The Court, Perth",
     description:
-      "House, techno, UKG, drum & bass, dubstep, and more — featuring ECU DJs.",
+      "House, techno, UKG, drum & bass and dubstep night featuring ECU DJs.",
     poster: "/events/student-night.JPG",
   },
 ];

@@ -15,12 +15,16 @@ function Poster({ event }: { event: EventItem }) {
       width={600}
       height={800}
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-      className="aspect-[3/4] w-full rounded-[22px] object-cover transition-opacity hover:opacity-90"
+      className="aspect-[3/4] w-full rounded-[22px] object-cover"
     />
   );
 
   if (!event.ticketUrl) {
-    return image;
+    return (
+      <div className="origin-center transition-transform duration-500 ease-out hover:scale-[1.04]">
+        {image}
+      </div>
+    );
   }
 
   return (
@@ -29,7 +33,7 @@ function Poster({ event }: { event: EventItem }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Tickets for ${event.title}`}
-      className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+      className="block origin-center transition-transform duration-500 ease-out hover:scale-[1.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
     >
       {image}
     </a>
@@ -48,7 +52,6 @@ export function EventCard({
       <article className="flex flex-col gap-4">
         <Poster event={event} />
         <div className="flex flex-col gap-2 text-center sm:text-left">
-          <p className="text-xs uppercase tracking-[0.25em]">{event.date}</p>
           <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
             {event.title}
           </h3>

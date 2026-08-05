@@ -11,7 +11,7 @@ export function PlaceholderMedia({
 }: PlaceholderMediaProps) {
   return (
     <div
-      className={`flex items-center justify-center rounded-[22px] bg-black/5 ${aspect} ${className}`}
+      className={`flex items-center justify-center rounded-[22px] bg-black/5 transition-transform duration-500 ease-out hover:scale-[1.04] ${aspect} ${className}`}
       role="img"
       aria-label={label}
     >
