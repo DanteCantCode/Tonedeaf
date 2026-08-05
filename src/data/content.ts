@@ -48,7 +48,7 @@ export const committee: Person[] = [
     id: "dj-1",
     name: "Dante Rives",
     role: "DJ, Music Producer, Photographer, Videographer",
-    bio: "Passionate about music, DJing, production and media, Dante is a long time creative. Currently 24 years old and learning all about music and media from the age of 15, his over 9 years of experience helps him in being confident in what he loves, creating and performing music for people to feel something and enjoy, as well as captuing life's most special moments to look back on for other people. He helps Tonedeaf by teaching newcomers how to DJ and produce music, as well as helping organise events and performing at them as well.",
+    bio: "Passionate about music, DJing, production and media, Dante is a long time creative. Currently 24 years old and learning all about music and media from the age of 15, his over 9 years of experience helps him in being confident in what he loves, creating and performing music for people to feel something and enjoy, as well as capturing life's most special moments to look back on for other people. He helps Tonedeaf by teaching newcomers how to DJ and produce music, as well as helping organise events and performing at those events as well.",
     image: "/committee/dante-rives.JPEG",
   },
   {
