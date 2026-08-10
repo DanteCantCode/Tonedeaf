@@ -5,6 +5,8 @@ export type Person = {
   bio: string;
   /** Drop a file in /public/committee/ and set e.g. "/committee/alex.jpg" */
   image: string | null;
+  buttonLabel?: string;
+  buttonUrl?: string;
 };
 
 export type EventItem = {
@@ -52,6 +54,8 @@ export const committee: Person[] = [
     role: "DJ, Music Producer, Photographer, Videographer",
     bio: "Passionate about music, DJing, production and media, Dante is a long time creative. Currently 24 years old and learning all about music and media from the age of 15, his over 9 years of experience helps him in being confident in what he loves, creating and performing music for people to feel something and enjoy, as well as capturing life's most special moments to look back on for other people. He helps Tonedeaf by teaching newcomers how to DJ and produce music, as well as helping organise events and performing at those events as well.",
     image: "/committee/dante-rives.JPEG",
+    buttonLabel: "Dante's Portfolio",
+    buttonUrl: "https://danterives.com",
   },
   {
     id: "dj-2",
@@ -99,12 +103,11 @@ export const events: EventItem[] = [
   {
     id: "dj-workshop-open-day",
     title: "Tonedeaf DJ Workshop",
-    date: "9 August 2028 · ECU Open Day",
-    endsAt: "2028-08-09T23:59:59+08:00",
+    date: "9 August 2026 · ECU Open Day",
+    endsAt: "2026-08-09T23:59:59+08:00",
     location: "CreatorsLAB, Ground Floor, ECU City",
     description: "Get on the decks and learn how to DJ!",
     poster: "/events/dj-workshop-open-day.PNG",
-    order: 2,
   },
   {
     id: "orientation-celebration",

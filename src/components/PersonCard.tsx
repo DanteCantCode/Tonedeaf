@@ -33,6 +33,16 @@ export function PersonCard({ person }: { person: Person }) {
         <p className="max-w-prose text-lg leading-relaxed text-black/80 sm:text-xl">
           {person.bio}
         </p>
+        {person.buttonLabel && person.buttonUrl ? (
+          <a
+            href={person.buttonUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex w-fit cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5 mx-auto sm:mx-0"
+          >
+            {person.buttonLabel}
+          </a>
+        ) : null}
       </FadeUp>
     </article>
   );
