@@ -30,9 +30,15 @@ export function PersonCard({ person }: { person: Person }) {
         <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">
           {person.name}
         </h3>
-        <p className="max-w-prose text-lg leading-relaxed text-black/80 sm:text-xl">
-          {person.bio}
-        </p>
+        {person.bioQuote ? (
+          <p className="max-w-prose whitespace-pre-line text-lg italic leading-relaxed text-black/80 sm:text-xl">
+            &ldquo;{person.bio}&rdquo;
+          </p>
+        ) : (
+          <p className="max-w-prose whitespace-pre-line text-lg leading-relaxed text-black/80 sm:text-xl">
+            {person.bio}
+          </p>
+        )}
         {person.buttonLabel && person.buttonUrl ? (
           <a
             href={person.buttonUrl}

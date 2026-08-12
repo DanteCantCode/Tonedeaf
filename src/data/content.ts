@@ -5,9 +5,11 @@ export type Person = {
   bio: string;
   /** Drop a file in /public/committee/ and set e.g. "/committee/alex.jpg" */
   image: string | null;
+  bioQuote?: boolean;
   buttonLabel?: string;
   buttonUrl?: string;
 };
+
 
 export type EventItem = {
   id: string;
@@ -45,7 +47,7 @@ export const committee: Person[] = [
     id: "president",
     name: "Max Van Zutphen (MAZE)",
     role: "Club President & DJ",
-    bio: "Bio coming soon. Swap this copy and add a photo when you're ready.",
+    bio: "”MAZE is the next big thing since house music” — New York Times\n“I didn't know who I was before I learned about MAZE” — Time Magazine\n“HOLY SHIT the Dutch really know their house music” — Mahatma Ghandi.",
     image: "/committee/max-van-zutphen.JPG",
   },
   {
@@ -61,15 +63,16 @@ export const committee: Person[] = [
     id: "dj-2",
     name: "Utkarsh Singh (KATO)",
     role: "DJ",
-    bio: "Bio coming soon. Genre, vibe, and favourite sets go here.",
+    bio: "I don’t really stick to one sound and I never have. My sets pull from dubstep, trap, baile funk, jersey club, tech house, melodic techno — whatever serves the moment. It sounds all over the place until you hear it, and then it just makes sense. The thing I’m always chasing is that shift. Going from something heavy that hits you in the chest to something groovy that keeps your feet moving without you realising it. That transition, that feeling — that’s what I’m obsessed with. I spend way too many hours finding tracks just for that one moment in a set. I’m not interested in playing it safe or running the same energy for two hours straight. I want the crowd to feel something change. Get a little lost, come back harder, not know exactly what’s coming next but trust where it’s going. That’s just how I DJ. High energy, a bit unpredictable, but always locked in.",
+    bioQuote: true,
     image: "/committee/utkarsh-singh.JPG",
   },
   {
     id: "dj-3",
-    name: "Name TBD",
+    name: "Gian Lipasana (Franvilla)",
     role: "DJ",
-    bio: "Bio coming soon. Genre, vibe, and favourite sets go here.",
-    image: null,
+    bio: "Are you bugging for some loving, you've come to the right place. Mr Lovebug, also known as FranVilla, has got you covered. An astronaut, marine and surgeon, he can do it all, but can he win your heart? Catch him on the mic singing or on the deck spinning, this man's love for music is undeniable.  Franvilla has been known to write and mix dance tracks, with a love of house, hip hop and rnb. He has a strong passion for entertainment and hopes to leave the audience with a smile on their face and maybe even catch the bug.",
+    image: "/committee/gian.png",
   },
 ];
 
