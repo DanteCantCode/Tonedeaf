@@ -104,6 +104,28 @@ export const events: EventItem[] = [
     rsvpUrl: "https://www.facebook.com/share/19HtciFGBm/",
   },
   {
+    id: "asylum-takeover-aug-21",
+    title: "Tonedeaf x Asylum Takeover",
+    date: "Friday 21 August 2026 · 9PM – 3AM",
+    endsAt: "2026-08-21T21:00:00+08:00",
+    location: "Paramount Nightclub, 163 James St, Northbridge",
+    description: "Garage · House · Techno.",
+    poster: "/events/asylum-takeover-aug-21.png",
+    order: 4,
+    ticketUrl:
+      "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
+  },
+  {
+    id: "dj-workshops-aug-sep",
+    title: "DJ Workshops",
+    date: "20 Aug · 3 Sep · 17 Sep 2026 · 2:00PM – 4:00PM",
+    endsAt: "2026-09-17T16:00:00+08:00",
+    location: "CreatorsLAB, Ground Floor, ECU City",
+    description: "Get on the decks and learn how to DJ with Tonedeaf.",
+    poster: "/events/dj-workshops-aug-sep.png",
+    order: 5,
+  },
+  {
     id: "dj-workshop-open-day",
     title: "Tonedeaf DJ Workshop",
     date: "9 August 2026 · ECU Open Day",
