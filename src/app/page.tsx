@@ -120,8 +120,7 @@ export default function Home() {
           <FadeUp>
             <footer className="mx-auto w-full max-w-6xl border-t border-black/20 pt-6 text-center text-sm text-black/60 sm:text-left">
               <p>
-                © {new Date().getFullYear()} {club.name} · ECU Student Guild
-                club
+                © {new Date().getFullYear()} {club.name}
               </p>
             </footer>
           </FadeUp>
