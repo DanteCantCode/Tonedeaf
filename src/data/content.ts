@@ -8,6 +8,7 @@ export type Person = {
   bioQuote?: boolean;
   buttonLabel?: string;
   buttonUrl?: string;
+  contactEmail?: string;
 };
 
 
@@ -50,6 +51,7 @@ export const committee: Person[] = [
     role: "Club President & DJ",
     bio: "”MAZE is the next big thing since house music” — New York Times\n“I didn't know who I was before I learned about MAZE” — Time Magazine\n“HOLY SHIT the Dutch really know their house music” — Mahatma Ghandi.",
     image: "/committee/max-van-zutphen.JPG",
+    contactEmail: "tonedeaf.ecu@gmail.com",
   },
   {
     id: "dj-1",
@@ -59,6 +61,7 @@ export const committee: Person[] = [
     image: "/committee/dante-rives.JPEG",
     buttonLabel: "Dante's Portfolio",
     buttonUrl: "https://danterives.com",
+    contactEmail: "dante@tonedeafecu.com",
   },
   {
     id: "dj-2",

@@ -39,15 +39,27 @@ export function PersonCard({ person }: { person: Person }) {
             {person.bio}
           </p>
         )}
-        {person.buttonLabel && person.buttonUrl ? (
-          <a
-            href={person.buttonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 inline-flex w-fit cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5 mx-auto sm:mx-0"
-          >
-            {person.buttonLabel}
-          </a>
+        {(person.buttonLabel && person.buttonUrl) || person.contactEmail ? (
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+            {person.buttonLabel && person.buttonUrl ? (
+              <a
+                href={person.buttonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+              >
+                {person.buttonLabel}
+              </a>
+            ) : null}
+            {person.contactEmail ? (
+              <a
+                href={`mailto:${person.contactEmail}`}
+                className="inline-flex w-fit cursor-pointer border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+              >
+                Contact
+              </a>
+            ) : null}
+          </div>
         ) : null}
       </FadeUp>
     </article>
