@@ -1,7 +1,11 @@
 import Image from "next/image";
-import type { EventItem } from "../data/content";
+import { club, type EventItem } from "../data/content";
 import { PlaceholderMedia } from "./PlaceholderMedia";
 import { FadeUp } from "./FadeUp";
+
+function ticketHref(event: EventItem) {
+  return event.ticketUrl ?? club.tickets;
+}
 
 function Poster({ event }: { event: EventItem }) {
   if (!event.poster) {
@@ -19,61 +23,15 @@ function Poster({ event }: { event: EventItem }) {
     />
   );
 
-  if (!event.ticketUrl) {
-    return (
-      <div className="origin-center transition-transform duration-500 ease-out hover:scale-[1.04]">
-        {image}
-      </div>
-    );
-  }
-
   return (
     <a
-      href={event.ticketUrl}
+      href={ticketHref(event)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Tickets for ${event.title}`}
       className="block origin-center transition-transform duration-500 ease-out hover:scale-[1.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
     >
       {image}
-    </a>
-  );
-}
-
-function EventActionButton({
-  href,
-  label,
-  primary = false,
-}: {
-  href?: string;
-  label: string;
-  primary?: boolean;
-}) {
-  const base =
-    "px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5";
-  const enabled = primary
-    ? `${base} cursor-pointer border border-black bg-black text-brand`
-    : `${base} cursor-pointer border border-black`;
-
-  if (!href) {
-    return (
-      <span
-        className={`${enabled} pointer-events-none opacity-40`}
-        aria-disabled="true"
-      >
-        {label}
-      </span>
-    );
-  }
-
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={enabled}
-    >
-      {label}
     </a>
   );
 }
@@ -102,12 +60,14 @@ export function EventCard({
         </div>
         {upcoming ? (
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <EventActionButton
-              href={event.ticketUrl}
-              label="Tickets"
-              primary
-            />
-            <EventActionButton href={event.rsvpUrl} label="RSVP" />
+            <a
+              href={ticketHref(event)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+            >
+              Tickets
+            </a>
           </div>
         ) : null}
       </article>
