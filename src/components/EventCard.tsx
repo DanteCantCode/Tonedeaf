@@ -1,11 +1,7 @@
 import Image from "next/image";
-import { club, type EventItem } from "../data/content";
+import type { EventItem } from "../data/content";
 import { PlaceholderMedia } from "./PlaceholderMedia";
 import { FadeUp } from "./FadeUp";
-
-function ticketHref(event: EventItem) {
-  return event.ticketUrl ?? club.tickets;
-}
 
 function Poster({ event }: { event: EventItem }) {
   if (!event.poster) {
@@ -23,9 +19,17 @@ function Poster({ event }: { event: EventItem }) {
     />
   );
 
+  if (!event.ticketUrl) {
+    return (
+      <div className="origin-center transition-transform duration-500 ease-out hover:scale-[1.04]">
+        {image}
+      </div>
+    );
+  }
+
   return (
     <a
-      href={ticketHref(event)}
+      href={event.ticketUrl}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Tickets for ${event.title}`}
@@ -45,6 +49,8 @@ export function EventCard({
   delay?: number;
   upcoming?: boolean;
 }) {
+  const ticketLabel = event.ticketLabel ?? "Tickets";
+
   return (
     <FadeUp delay={delay}>
       <article className="flex flex-col gap-4">
@@ -60,14 +66,30 @@ export function EventCard({
         </div>
         {upcoming ? (
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <a
-              href={ticketHref(event)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
-            >
-              Tickets
-            </a>
+            {event.ticketUrl ? (
+              <a
+                href={event.ticketUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+              >
+                {ticketLabel}
+              </a>
+            ) : (
+              <span className="border border-black bg-black px-5 py-3 text-sm font-medium text-brand">
+                {ticketLabel}
+              </span>
+            )}
+            {event.rsvpUrl ? (
+              <a
+                href={event.rsvpUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+              >
+                RSVP
+              </a>
+            ) : null}
           </div>
         ) : null}
       </article>

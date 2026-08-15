@@ -28,6 +28,7 @@ export type EventItem = {
   poster: string | null;
   order?: number;
   ticketUrl?: string;
+  ticketLabel?: string;
   rsvpUrl?: string;
 };
 
@@ -114,6 +115,7 @@ export const events: EventItem[] = [
     order: 4,
     ticketUrl:
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
+    rsvpUrl: "https://www.facebook.com/share/1JiaCCXdEB/",
   },
   {
     id: "dj-workshops-aug-sep",
@@ -124,7 +126,7 @@ export const events: EventItem[] = [
     description: "Get on the decks and learn how to DJ with Tonedeaf.",
     poster: "/events/dj-workshops-aug-sep.png",
     order: 5,
-    ticketUrl: "https://www.trybooking.com/events/landing/1609932",
+    ticketLabel: "Tickets Available Soon",
   },
   {
     id: "dj-workshop-open-day",
