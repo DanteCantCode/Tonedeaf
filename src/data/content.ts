@@ -129,7 +129,7 @@ export const events: EventItem[] = [
     description: "Get on the decks and learn how to DJ with Tonedeaf.",
     poster: "/events/dj-workshops-aug-sep.png",
     order: 5,
-    ticketLabel: "Tickets Available Soon",
+    ticketUrl: "https://www.trybooking.com/events/landing/1581693",
   },
   {
     id: "dj-workshop-open-day",
