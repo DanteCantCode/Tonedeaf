@@ -121,6 +121,17 @@ export const events: EventItem[] = [
     rsvpUrl: "https://www.facebook.com/share/1JiaCCXdEB/",
   },
   {
+    id: "monday-sessions",
+    title: "Monday Sessions",
+    date: "Monday 24 August 2026 · 2:00PM – 4:00PM",
+    endsAt: "2026-08-24T16:00:00+08:00",
+    location: "Glastonbury's Bar and Kitchen",
+    description: "Featuring Dante Rives — house, UKG, techno and remixes. Free entry, all welcome.",
+    poster: "/events/monday-sessions.png",
+    order: 5,
+    rsvpUrl: "https://www.facebook.com/share/1HkprBsLWK/",
+  },
+  {
     id: "dj-workshops-aug-sep",
     title: "DJ Workshops",
     date: "20 Aug · 3 Sep · 17 Sep 2026 · 2:00PM – 4:00PM",
@@ -128,7 +139,7 @@ export const events: EventItem[] = [
     location: "CreatorsLAB, Ground Floor, ECU City",
     description: "Get on the decks and learn how to DJ with Tonedeaf.",
     poster: "/events/dj-workshops-aug-sep.png",
-    order: 5,
+    order: 6,
     ticketUrl: "https://www.trybooking.com/events/landing/1581693",
   },
   {

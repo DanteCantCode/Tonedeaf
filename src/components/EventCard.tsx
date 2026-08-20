@@ -19,7 +19,9 @@ function Poster({ event }: { event: EventItem }) {
     />
   );
 
-  if (!event.ticketUrl) {
+  const posterHref = event.ticketUrl ?? event.rsvpUrl;
+
+  if (!posterHref) {
     return (
       <div className="origin-center transition-transform duration-500 ease-out hover:scale-[1.04]">
         {image}
@@ -29,10 +31,14 @@ function Poster({ event }: { event: EventItem }) {
 
   return (
     <a
-      href={event.ticketUrl}
+      href={posterHref}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Tickets for ${event.title}`}
+      aria-label={
+        event.ticketUrl
+          ? `Tickets for ${event.title}`
+          : `RSVP for ${event.title}`
+      }
       className="block origin-center transition-transform duration-500 ease-out hover:scale-[1.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
     >
       {image}
@@ -59,6 +65,7 @@ export function EventCard({
           <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
             {event.title}
           </h3>
+          <p className="text-sm text-black/70">{event.date}</p>
           <p className="text-sm text-black/70">{event.location}</p>
           <p className="text-base leading-relaxed text-black/80">
             {event.description}
@@ -66,7 +73,8 @@ export function EventCard({
         </div>
         {upcoming ? (
           <div className="flex flex-wrap items-center justify-center gap-3">
-            {event.ticketUrl ? (
+            {event.ticketUrl || event.ticketLabel ? (
+              event.ticketUrl ? (
               <a
                 href={event.ticketUrl}
                 target="_blank"
@@ -75,17 +83,22 @@ export function EventCard({
               >
                 {ticketLabel}
               </a>
-            ) : (
+              ) : (
               <span className="border border-black bg-black px-5 py-3 text-sm font-medium text-brand">
                 {ticketLabel}
               </span>
-            )}
+              )
+            ) : null}
             {event.rsvpUrl ? (
               <a
                 href={event.rsvpUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cursor-pointer border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+                className={
+                  event.ticketUrl || event.ticketLabel
+                    ? "cursor-pointer border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+                    : "cursor-pointer border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+                }
               >
                 RSVP
               </a>
