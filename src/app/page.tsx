@@ -22,17 +22,17 @@ export default function Home() {
             <p className="animate-fade-up-delay-2 max-w-xl text-lg leading-relaxed sm:text-xl">
               {club.tagline}
             </p>
-            <div className="animate-fade-up-delay-3 flex flex-col items-center gap-4 pt-2">
-              <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="animate-fade-up-delay-3 flex flex-col items-center gap-6">
+              <div className="grid w-fit grid-cols-2 gap-4">
                 <a
                   href="#upcoming"
-                  className="border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+                  className="border border-black bg-black px-5 py-3 text-center text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
                 >
                   Upcoming events
                 </a>
                 <a
                   href="#committee"
-                  className="border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+                  className="border border-black px-5 py-3 text-center text-sm font-medium transition-transform hover:-translate-y-0.5"
                 >
                   Meet the crew
                 </a>

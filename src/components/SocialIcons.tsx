@@ -2,9 +2,9 @@ import { FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { club } from "../data/content";
 
 const buttonClass =
-  "inline-flex h-11 w-11 items-center justify-center rounded-full bg-black text-brand transition-transform duration-300 ease-out hover:scale-110";
+  "inline-flex h-11 w-11 items-center justify-center rounded-full bg-black leading-none text-brand transition-transform duration-300 ease-out hover:scale-110";
 
-const iconClass = "h-5 w-5";
+const iconClass = "block h-5 w-5 shrink-0";
 
 export function SocialIcons() {
   return (
