@@ -39,6 +39,7 @@ export const club = {
   about:
     "Tonedeaf fosters a vibrant community for ECU students passionate about DJing, electronic music, and event production. We organise events such as music events at nightclubs, bars and pubs, open-deck nights, and DJ showcases, plus workshops during the week to learn more about the art of DJing.",
   instagram: "https://www.instagram.com/tonedeaf_ecu/",
+  whatsapp: "https://chat.whatsapp.com/KTvjkrFmxk31mwnJ7w4ZWU?s=qs&p=a&mlu=4",
   tickets: "https://www.trybooking.com/events/landing/1609932",
   email: "tonedeaf.ecu@gmail.com",
   location: "ECU City Campus, 500 Wellington St, Perth WA 6000",

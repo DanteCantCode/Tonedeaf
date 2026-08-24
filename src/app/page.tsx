@@ -2,6 +2,7 @@ import { PersonCard } from "../components/PersonCard";
 import { EventSections } from "../components/EventSections";
 import { ContactForm } from "../components/ContactForm";
 import { FadeUp } from "../components/FadeUp";
+import { SocialIcons } from "../components/SocialIcons";
 import { club, committee } from "../data/content";
 
 export default function Home() {
@@ -21,19 +22,22 @@ export default function Home() {
             <p className="animate-fade-up-delay-2 max-w-xl text-lg leading-relaxed sm:text-xl">
               {club.tagline}
             </p>
-            <div className="animate-fade-up-delay-3 flex flex-wrap items-center justify-center gap-4 pt-2">
-              <a
-                href="#upcoming"
-                className="border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
-              >
-                Upcoming events
-              </a>
-              <a
-                href="#committee"
-                className="border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
-              >
-                Meet the crew
-              </a>
+            <div className="animate-fade-up-delay-3 flex flex-col items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="#upcoming"
+                  className="border border-black bg-black px-5 py-3 text-sm font-medium text-brand transition-transform hover:-translate-y-0.5"
+                >
+                  Upcoming events
+                </a>
+                <a
+                  href="#committee"
+                  className="border border-black px-5 py-3 text-sm font-medium transition-transform hover:-translate-y-0.5"
+                >
+                  Meet the crew
+                </a>
+              </div>
+              <SocialIcons />
             </div>
           </div>
         </section>
@@ -109,6 +113,14 @@ export default function Home() {
                   className="w-fit underline underline-offset-4"
                 >
                   Instagram: @tonedeaf_ecu
+                </a>
+                <a
+                  href={club.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-fit underline underline-offset-4"
+                >
+                  Join our WhatsApp Group
                 </a>
               </div>
             </FadeUp>
