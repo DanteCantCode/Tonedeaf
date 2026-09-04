@@ -135,7 +135,7 @@ export const events: EventItem[] = [
   },
   {
     id: "public-disturbance-yagan-square",
-    title: "Public Disturbance at Yagan Square",
+    title: "Public Disturbance",
     date: "Monday 14 September 2026 · 11:00AM – 4:00PM",
     endsAt: "2026-09-14T16:00:00+08:00",
     location: "Yagan Square, Front of ECU City",
@@ -143,6 +143,7 @@ export const events: EventItem[] = [
       "ECU x Tonedeaf presents a day of live music in Yagan Square. Featuring Tonedeaf DJs & WAAPA students — electronic, acoustic and vocal.",
     poster: "/events/public-disturbance-yagan-square.jpg",
     order: 7,
+    rsvpUrl: "https://www.facebook.com/share/1kAHrpKsdc/",
   },
   {
     id: "monday-sessions",
