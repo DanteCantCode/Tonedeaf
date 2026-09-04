@@ -122,6 +122,29 @@ export const events: EventItem[] = [
     rsvpUrl: "https://www.facebook.com/share/1JiaCCXdEB/",
   },
   {
+    id: "asylum-takeover-sep-25",
+    title: "Tonedeaf x Asylum Takeover",
+    date: "Friday 25 September 2026 · 9PM – 2AM",
+    endsAt: "2026-09-26T02:00:00+08:00",
+    location: "Paramount Nightclub, 163 James St, Northbridge",
+    description: "Garage · House · Techno.",
+    poster: "/events/asylum-takeover-aug-21.png",
+    order: 8,
+    ticketUrl:
+      "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
+  },
+  {
+    id: "public-disturbance-yagan-square",
+    title: "Public Disturbance at Yagan Square",
+    date: "Monday 14 September 2026 · 11:00AM – 4:00PM",
+    endsAt: "2026-09-14T16:00:00+08:00",
+    location: "Yagan Square, Front of ECU City",
+    description:
+      "ECU x Tonedeaf presents a day of live music in Yagan Square. Featuring Tonedeaf DJs & WAAPA students — electronic, acoustic and vocal.",
+    poster: "/events/public-disturbance-yagan-square.jpg",
+    order: 7,
+  },
+  {
     id: "monday-sessions",
     title: "Monday Sessions",
     date: "Monday 24 August 2026 · 2:00PM – 4:00PM",
