@@ -131,6 +131,8 @@ export const events: EventItem[] = [
       "House & techno at What If? 360. Free entry. Sounds by Ruby, Ava, Molly B3B · AndyPanda B2B Nury · Dante Rives B2B Phill Martinez · Kato B2B Errcat · Maze B2B Nyetmir.",
     poster: "/events/asylum-sessions-sep-25.jpg",
     order: 8,
+    ticketUrl:
+      "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
   },
   {
     id: "public-disturbance-yagan-square",
