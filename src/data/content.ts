@@ -123,15 +123,14 @@ export const events: EventItem[] = [
   },
   {
     id: "asylum-takeover-sep-25",
-    title: "Tonedeaf x Asylum Takeover",
-    date: "Friday 25 September 2026 · 9PM – 2AM",
+    title: "Asylum Sessions presents Tonedeaf",
+    date: "Friday 25 September 2026 · 9PM – Late",
     endsAt: "2026-09-26T02:00:00+08:00",
-    location: "Paramount Nightclub, 163 James St, Northbridge",
-    description: "Garage · House · Techno.",
-    poster: "/events/asylum-takeover-aug-21.png",
+    location: "What If? 360 (Downstairs), 163 James St, Northbridge",
+    description:
+      "House & techno at What If? 360. Free entry. Sounds by Ruby, Ava, Molly B3B · AndyPanda B2B Nury · Dante Rives B2B Phill Martinez · Kato B2B Errcat · Maze B2B Nyetmir.",
+    poster: "/events/asylum-sessions-sep-25.jpg",
     order: 8,
-    ticketUrl:
-      "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
   },
   {
     id: "public-disturbance-yagan-square",
@@ -140,7 +139,7 @@ export const events: EventItem[] = [
     endsAt: "2026-09-14T16:00:00+08:00",
     location: "Yagan Square, Front of ECU City",
     description:
-      "ECU x Tonedeaf presents a day of live music in Yagan Square. Featuring Tonedeaf DJs & WAAPA students — electronic, acoustic and vocal.",
+      "ECU x Tonedeaf presents a day of live music in Yagan Square. Featuring Tonedeaf DJs & WAAPA students performing electronic, acoustic and vocal music!",
     poster: "/events/public-disturbance-yagan-square.jpg",
     order: 7,
     rsvpUrl: "https://www.facebook.com/share/1kAHrpKsdc/",
