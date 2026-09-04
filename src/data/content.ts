@@ -124,11 +124,11 @@ export const events: EventItem[] = [
   {
     id: "asylum-takeover-sep-25",
     title: "Asylum Sessions presents Tonedeaf",
-    date: "Friday 25 September 2026 · 9PM – Late",
+    date: "Friday 25 September 2026 · 9PM – 2AM",
     endsAt: "2026-09-26T02:00:00+08:00",
-    location: "What If? 360 (Downstairs), 163 James St, Northbridge",
+    location: "Paramount Nightclub (Downstairs), 163 James St, Northbridge",
     description:
-      "House & techno at What If? 360. Free entry. Sounds by Ruby, Ava, Molly B3B · AndyPanda B2B Nury · Dante Rives B2B Phill Martinez · Kato B2B Errcat · Maze B2B Nyetmir.",
+      "Underground house & techno at Paramount Nightclub! Free entry! And a night full of B2B DJs!",
     poster: "/events/asylum-sessions-sep-25.jpg",
     order: 8,
     ticketUrl:
