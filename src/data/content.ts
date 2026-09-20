@@ -130,9 +130,33 @@ export const events: EventItem[] = [
     description:
       "Underground house & techno at Paramount Nightclub! Free entry! And a night full of B2B DJs!",
     poster: "/events/asylum-sessions-sep-25.jpg",
-    order: 8,
+    order: 10,
     ticketUrl:
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
+  },
+  {
+    id: "public-disturbance-sep-21",
+    title: "Public Disturbance",
+    date: "Monday 21 September 2026 · 11:00AM – 4:00PM",
+    endsAt: "2026-09-21T16:00:00+08:00",
+    location: "Yagan Square, Front of ECU City",
+    description:
+      "ECU x Tonedeaf presents another day of live music in Yagan Square. Featuring Tonedeaf DJs & WAAPA students performing house, techno, UKG, melodic and D&B!",
+    poster: "/events/public-disturbance-sep-21.jpg",
+    order: 8,
+  },
+  {
+    id: "pines-music-festival",
+    title: "PINES — ECU Music Festival",
+    date: "Friday 25 September 2026 · 6:00PM – 10:00PM",
+    endsAt: "2026-09-25T22:00:00+08:00",
+    location: "ECU Pines, ECU Joondalup",
+    description:
+      "ECU Student Guild presents PINES. Live music from Lazy Haze, The Kickons, Girl Power Jukebox and Micaela Hull, plus a silent disco, DJs, food trucks and a bar. $10 for ECU students.",
+    poster: "/events/pines-music-festival.jpg",
+    order: 9,
+    ticketUrl:
+      "https://events.humanitix.com/pines-music-festival?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUc07hwZG9mAmZkaWQWUOwxQEgaj3J6lBoiPC2fhMYXIUIrH2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwyl8tseA3xCdOrkwxgtwSSBgqUr7Aoyhg7xZRkpwWLEyunMd_BccDjCqNCe_aem_-FkBL3fmFSQ32z1OeZKwJw",
   },
   {
     id: "public-disturbance-yagan-square",
