@@ -135,6 +135,18 @@ export const events: EventItem[] = [
       "https://tally.so/r/WOPL6P?fbclid=IwdGRleATVOUhjbGNrBNAgqGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHq7NtyQJxwq0-XUK3dSNjxnZVS13KcW_VX7UrkO9LgAq8KC4-SoKBYPq25m5_aem_VTWhmO6G6vkfz5_PHEmMDQ",
   },
   {
+    id: "public-disturbance-oct-5",
+    title: "Public Disturbance",
+    date: "Monday 5 October 2026 · 11:00AM – 4:00PM",
+    endsAt: "2026-10-05T16:00:00+08:00",
+    location: "Yagan Square, Front of ECU City",
+    description:
+      "ECU x Tonedeaf presents Public Disturbance at Yagan Square. Featuring Tonedeaf DJs & WAAPA students playing house, techno, UKG, melodic and D&B.",
+    poster: "/events/public-disturbance-oct-5.jpg",
+    order: 11,
+    rsvpUrl: "https://www.facebook.com/share/1DjWw5oppy/",
+  },
+  {
     id: "public-disturbance-sep-21",
     title: "Public Disturbance",
     date: "Monday 21 September 2026 · 11:00AM – 4:00PM",
