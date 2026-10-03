@@ -147,6 +147,18 @@ export const events: EventItem[] = [
     rsvpUrl: "https://www.facebook.com/share/1DjWw5oppy/",
   },
   {
+    id: "house-of-madness",
+    title: "Trancition — House of Madness",
+    date: "Friday 30 October 2026 · 9:00PM",
+    endsAt: "2026-10-31T03:00:00+08:00",
+    location: "Metro City, Perth City",
+    description:
+      "Halloween hardstyle with Devin Wild and Infliction, hosted by MCD. Tonedeaf DJs Dante Rives, Kato, Maze and KBOT are on the lineup.",
+    poster: "/events/house-of-madness.JPG",
+    order: 12,
+    ticketUrl: "https://megatix.com.au/events/trancition-presents-house-of-madness-2026",
+  },
+  {
     id: "public-disturbance-sep-21",
     title: "Public Disturbance",
     date: "Monday 21 September 2026 · 11:00AM – 4:00PM",
